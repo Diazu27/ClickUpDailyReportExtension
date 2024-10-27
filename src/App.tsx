@@ -1,10 +1,10 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import { ThemeProvider } from "./components/theme-provider";
 import { Dashboard } from "./Views/Dashboard/Dashboard";
 import { Settings } from "./Views/Settings/Settings";
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Dashboard />,

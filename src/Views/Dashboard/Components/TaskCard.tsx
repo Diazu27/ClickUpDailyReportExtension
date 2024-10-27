@@ -1,15 +1,5 @@
 import { Badge } from '../../../components/ui/badge'
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../../../components/ui/card'
-
-enum TaskStatus {
-  'Por aprobar soporte',
-  'Notificar ventas',
-  'Por aprobar cliente',
-  'Por aprobar IR',
-  'Parado',
-  'En proceso desarrollo',
-  'Reportado desarrollo',
-}
+import { Card, CardDescription, CardHeader, CardTitle } from '../../../components/ui/card'
 
 export const TaskCard = () => {
   

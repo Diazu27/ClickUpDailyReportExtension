@@ -4,7 +4,6 @@ import { Input } from "../../components/ui/input"
 import { Label } from "@radix-ui/react-label"
 import { Button } from "../../components/ui/button"
 import { useEffect, useState } from "react"
-import { set } from "react-hook-form"
 
 export const Settings = () => {
     const [ClickUpPersonalToken, setClickUpPersonalToken] = useState('');
