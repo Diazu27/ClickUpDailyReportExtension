@@ -82,12 +82,12 @@ export const Dashboard = () => {
     <div className="flex flex-col flex-grow">
         <div className="flex mb-4 mt-5">
             <CalendarCheck className="w-[18px] mr-2" />
-            <h5 className="font-bold mb-2">Tus tareas de hoy</h5>
+            <h5 className="font-bold mb-1">Tus tareas de hoy</h5>
         </div>
-        <div className="overflow-y-scroll max-h-[310px]"> {/* Ajusta la altura máxima según sea necesario */}
+        <div className="overflow-y-scroll max-h-[320px]"> {/* Ajusta la altura máxima según sea necesario */}
             {
                 TimeEntryData.map((task) => (
-                    <TaskCard task={task.task} key={task.id} />
+                    <TaskCard task={task.task} task_url={task.task_url} key={task.id} />
                 ))
             }
         </div>
