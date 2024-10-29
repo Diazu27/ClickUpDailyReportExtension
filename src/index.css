@@ -8,12 +8,33 @@
     box-sizing: border-box;
 }
 
-.MainContainer{
-    display: flex;
-    width: 390px;
-    height: 500px;
-    border: 1px solid white;
+.MainContainer {
+  display: flex;
+  width: 390px;
+  height: 540px;
+  border: 1px solid white;
 }
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff00; 
+  border-radius: 10px;
+  width: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5f5e5e; /* Color del pulgar */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 
 @layer base {
   :root {
