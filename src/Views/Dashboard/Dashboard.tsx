@@ -92,7 +92,7 @@ export const Dashboard = () => {
   return (
     <div className="w-full h-full flex flex-col">
     <Navbar />
-    <UserSection TeamData={TeamData} UserData={UserData} />
+    <UserSection TeamData={TeamData} UserData={UserData} TimeEntryData={TimeEntryData} />
     <div className="flex flex-col flex-grow">
         <div className="flex mb-4 mt-5 items-center justify-between">
             <div className="flex items-center">

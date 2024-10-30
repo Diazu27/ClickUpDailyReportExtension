@@ -1,15 +1,16 @@
 import { BriefcaseBusiness, Clipboard } from 'lucide-react'
 import { AvatarUser } from './components/AvatarUser'
-import { Teams, User } from '@/interfaces/Request_interfaces';
+import { Teams, TimeEntry, User } from '@/interfaces/Request_interfaces';
 import { getClipboardContent } from './ClipboardContent';
 interface UserSectionProps {
     TeamData: Teams;
-    UserData:User
+    UserData:User;
+    TimeEntryData:TimeEntry[];
 }
 
-export const UserSection = ({TeamData, UserData}:UserSectionProps) => {
+export const UserSection = ({TeamData, UserData,TimeEntryData}:UserSectionProps) => {
   const CopyToClipboard = () => {
-    navigator.clipboard.writeText(getClipboardContent(UserData, TeamData));
+    navigator.clipboard.writeText(getClipboardContent(TimeEntryData));
   }
 
   return (
